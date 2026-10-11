@@ -1,0 +1,1465 @@
+{
+ "as_of": "2026-10-06",
+ "segments": {
+  "collectors": {
+   "size_hint": 2400,
+   "sample": [
+    {
+     "customer_id": 10000,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10001,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10002,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10003,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10004,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10005,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10006,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10007,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10008,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10009,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10010,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10011,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10012,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10013,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10014,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10015,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10016,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10017,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10018,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10019,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10020,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10021,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10022,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10023,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10024,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10025,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10026,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10027,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10028,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10029,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10030,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10031,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10032,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10033,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10034,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10035,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10036,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10037,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10038,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10039,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10040,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10041,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10042,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10043,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10044,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10045,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10046,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10047,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10048,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10049,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10050,
+     "age_verified": false,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10051,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10052,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10053,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10054,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10055,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10056,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10057,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10058,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10059,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    }
+   ]
+  },
+  "explorers": {
+   "size_hint": 6100,
+   "sample": [
+    {
+     "customer_id": 10060,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10061,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10062,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10063,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10064,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10065,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10066,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10067,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10068,
+     "age_verified": false,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10069,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10070,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10071,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10072,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10073,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10074,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10075,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10076,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10077,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10078,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10079,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10080,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10081,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10082,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10083,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10084,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10085,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10086,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": true
+    },
+    {
+     "customer_id": 10087,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10088,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10089,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10090,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10091,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10092,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10093,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10094,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10095,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10096,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": true
+    },
+    {
+     "customer_id": 10097,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10098,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10099,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10100,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10101,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10102,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10103,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10104,
+     "age_verified": false,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10105,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10106,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10107,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10108,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10109,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10110,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10111,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10112,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10113,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10114,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10115,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10116,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10117,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10118,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10119,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    }
+   ]
+  },
+  "occasion_buyers": {
+   "size_hint": 9800,
+   "sample": [
+    {
+     "customer_id": 10120,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10121,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10122,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10123,
+     "age_verified": false,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10124,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10125,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10126,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10127,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10128,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10129,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10130,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10131,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10132,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10133,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10134,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10135,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10136,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10137,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10138,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10139,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10140,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10141,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10142,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10143,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10144,
+     "age_verified": false,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10145,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10146,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10147,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10148,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10149,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10150,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10151,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10152,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10153,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10154,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10155,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10156,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10157,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10158,
+     "age_verified": false,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10159,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10160,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10161,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10162,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10163,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10164,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10165,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10166,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10167,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10168,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10169,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10170,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10171,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10172,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10173,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10174,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10175,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10176,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10177,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10178,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10179,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    }
+   ]
+  },
+  "lapsed": {
+   "size_hint": 7300,
+   "sample": [
+    {
+     "customer_id": 10180,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": true
+    },
+    {
+     "customer_id": 10181,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10182,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10183,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10184,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10185,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10186,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10187,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10188,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10189,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10190,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10191,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10192,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10193,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10194,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10195,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10196,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": true
+    },
+    {
+     "customer_id": 10197,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10198,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10199,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10200,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10201,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10202,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10203,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10204,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10205,
+     "age_verified": false,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10206,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10207,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10208,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10209,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10210,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10211,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10212,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10213,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10214,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10215,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10216,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10217,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10218,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10219,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10220,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10221,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10222,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10223,
+     "age_verified": true,
+     "last_emailed_days_ago": 30,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10224,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10225,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10226,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10227,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10228,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10229,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10230,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10231,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10232,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10233,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10234,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10235,
+     "age_verified": true,
+     "last_emailed_days_ago": 15,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10236,
+     "age_verified": true,
+     "last_emailed_days_ago": 5,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10237,
+     "age_verified": true,
+     "last_emailed_days_ago": 2,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10238,
+     "age_verified": true,
+     "last_emailed_days_ago": 9,
+     "open_support_ticket": false
+    },
+    {
+     "customer_id": 10239,
+     "age_verified": true,
+     "last_emailed_days_ago": 60,
+     "open_support_ticket": false
+    }
+   ]
+  }
+ }
+}

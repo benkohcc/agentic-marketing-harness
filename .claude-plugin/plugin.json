@@ -1,0 +1,11 @@
+{
+  "name": "amh",
+  "version": "0.1.0",
+  "description": "Agentic Marketing Harness — the loop, three human gates, blocking hooks, and a schema-validated context layer (MARKETING.md) for running campaigns through AI agents.",
+  "author": { "name": "Benjamin Koh" },
+  "license": "MIT",
+  "keywords": ["marketing", "campaigns", "harness", "hooks", "gates", "marketing-md"],
+  "agents": "./agents",
+  "skills": "./skills",
+  "hooks": "./hooks/hooks.json"
+}

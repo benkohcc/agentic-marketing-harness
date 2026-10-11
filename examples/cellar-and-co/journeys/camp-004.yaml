@@ -1,0 +1,24 @@
+journey_id: camp-004
+campaign_id: camp-004
+channel: email
+start: send_main
+states:
+  send_main:
+    type: send
+    asset: email
+    on:
+      click:       exit_converted
+      unsubscribe: exit_unsub
+      wait_3d:     reminder
+    max_wait_days: 3
+  reminder:
+    type: send
+    asset: email_reminder
+    on:
+      click:       exit_converted
+      unsubscribe: exit_unsub
+      wait_4d:     exit_timeout
+    max_wait_days: 4
+  exit_converted: { type: exit }
+  exit_unsub:     { type: exit, suppress: true }
+  exit_timeout:   { type: exit }

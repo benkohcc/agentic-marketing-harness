@@ -1,0 +1,6 @@
+{"as_of":"2026-10-06","items":[
+  {"sku":"CC-0412","on_hand":1080,"units_per_week":36,"days_of_supply":210,"status":"overstock","threshold_days":90},
+  {"sku":"CC-0218","on_hand":96,"units_per_week":30,"days_of_supply":22,"status":"ok","threshold_days":90},
+  {"sku":"CC-0731","on_hand":60,"units_per_week":6,"days_of_supply":70,"status":"ok","threshold_days":90},
+  {"sku":"CC-0905","on_hand":18,"units_per_week":9,"days_of_supply":14,"status":"low","threshold_days":90}
+]}

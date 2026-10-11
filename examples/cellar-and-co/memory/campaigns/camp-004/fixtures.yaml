@@ -1,0 +1,44 @@
+campaign_id: camp-004
+written_by: test-writer
+written_at: 2026-10-08T09:40:00-04:00
+
+audience:
+  cases:
+    # explorers — the brief's audience
+    - { customer: { orders_12m: 2, regions_12m: 3 },                                     expect: { explorers: true } }
+    - { customer: { orders_12m: 2, regions_12m: 2 },                                     expect: { explorers: false } }   # boundary: regions
+    - { customer: { orders_12m: 1, regions_12m: 4 },                                     expect: { explorers: false } }   # boundary: orders
+    # collectors — excluded per G1 condition; the rule must behave
+    - { customer: { orders_12m: 3, aov: 190.00, last_order_days_ago: 20 },               expect: { collectors: true } }
+    - { customer: { orders_12m: 3, aov: 180.00, last_order_days_ago: 20 },               expect: { collectors: false } }  # boundary: aov strictly > 180
+    - { customer: { orders_12m: 3, aov: 400.00, allocation_opt_out: true },              expect: { collectors: false } }  # exclusion wins
+    - { customer: { orders_12m: 1, aov: 60.00, allocation_list: true, last_order_days_ago: 30 }, expect: { collectors: true } }
+    # lapsed exclusions
+    - { customer: { last_order_days_ago: 200, unsubscribed: false, last_emailed_days_ago: 30 }, expect: { lapsed: true } }
+    - { customer: { last_order_days_ago: 200, unsubscribed: false, open_support_ticket: true }, expect: { lapsed: false } }
+    - { customer: { last_order_days_ago: 200, unsubscribed: false, last_emailed_days_ago: 5 },  expect: { lapsed: false } }
+  disjoint: [[collectors, lapsed]]            # a collector with a 180-day-old last order is not a collector
+  size_tolerance: 0.35
+  exclusions_applied: ["emailed_within_days: 14"]
+
+journey:
+  structural:
+    every_state_reaches_exit: true
+    no_cycle_without_exit: true
+    every_send_references_linted_asset: true
+    every_wait_has_max_days: true
+  traces:
+    - { events: [click],                       expect: { sends: 1, path: [send_main, exit_converted] } }
+    - { events: [open, wait_3d, click],        expect: { sends: 2, path: [send_main, reminder, exit_converted] } }
+    - { events: [open, wait_3d, wait_4d],      expect: { sends: 2, path: [send_main, reminder, exit_timeout] } }
+    - { events: [unsubscribe, wait_3d],        expect: { sends: 1, suppressed_after: true } }
+  properties:
+    runs: 2000
+    never: [sends_over_cap, send_to_suppressed, send_outside_window, send_after_end_date]
+
+copy:
+  must_contain:
+    email.body: ["2019", "Médoc", "24"]
+  must_equal:
+    "email.body discount_pct": 12
+  links_all_match: "utm_campaign=camp-004"

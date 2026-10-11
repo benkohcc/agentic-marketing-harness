@@ -1,0 +1,13 @@
+{
+  "name": "amh",
+  "owner": { "name": "Benjamin Koh" },
+  "metadata": { "description": "Agentic Marketing Harness plugin marketplace" },
+  "plugins": [
+    {
+      "name": "amh",
+      "source": "./",
+      "description": "Agentic Marketing Harness — loop, gates, hooks, MARKETING.md",
+      "version": "0.1.0"
+    }
+  ]
+}

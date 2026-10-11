@@ -1,0 +1,6 @@
+[
+  {"sku":"CC-0412","name":"Château Lanessan 2019","region":"Haut-Médoc, Bordeaux","grape":"Cabernet Sauvignon blend","vintage":2019,"price":32.00,"cogs":19.50,"tasting_note":"Cherries, a little pencil shaving, tannins that behave themselves. Open with roast chicken.","tech_sheet":"docs/products/CC-0412.pdf","critic_scores":[],"certifications":[]},
+  {"sku":"CC-0218","name":"Domaine Vacheron Sancerre 2023","region":"Loire","grape":"Sauvignon Blanc","vintage":2023,"price":38.00,"cogs":24.00,"tasting_note":"Lean, salty, better cold than you'd expect. Oysters, or nothing.","tech_sheet":"docs/products/CC-0218.pdf","critic_scores":[],"certifications":["organic (Ecocert, on file)"]},
+  {"sku":"CC-0731","name":"Produttori del Barbaresco 2020","region":"Piedmont","grape":"Nebbiolo","vintage":2020,"price":54.00,"cogs":36.00,"tasting_note":"Roses, tar, and a grip that needs an hour in the decanter. Braised anything.","tech_sheet":"docs/products/CC-0731.pdf","critic_scores":[],"certifications":[]},
+  {"sku":"CC-0905","name":"Ridge Lytton Springs 2021","region":"Dry Creek Valley, Sonoma","grape":"Zinfandel blend","vintage":2021,"price":48.00,"cogs":31.00,"tasting_note":"Blackberry, black pepper, and more restraint than Zinfandel usually shows. Grilled lamb.","tech_sheet":"docs/products/CC-0905.pdf","critic_scores":[],"certifications":[]}
+]

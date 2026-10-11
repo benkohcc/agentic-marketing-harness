@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://amh.dev/schemas/marketing-0.1.json",
+  "title": "MARKETING.md front matter",
+  "description": "The machine contract for an Agentic Marketing Harness context layer. See docs/marketing-md-spec.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["amh_version", "business", "brand", "audiences", "campaign_types", "channels", "metrics", "claims", "compliance", "gates", "memory", "kill_switch"],
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approver", "artifact"],
+      "properties": {
+        "approver": { "type": "string", "minLength": 1 },
+        "artifact": { "type": "string", "minLength": 1 },
+        "timeout_hours": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "frequency_cap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "per_days"],
+      "properties": {
+        "count": { "type": "integer", "minimum": 1 },
+        "per_days": { "type": "integer", "minimum": 1 }
+      }
+    }
+  },
+  "properties": {
+    "amh_version": { "type": "string", "pattern": "^0\\.1$" },
+
+    "business": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "vertical", "model", "markets", "currency"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "vertical": { "type": "string", "minLength": 1 },
+        "model": { "enum": ["dtc", "b2b", "marketplace", "subscription", "mixed"] },
+        "markets": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[A-Z]{2}$" } },
+        "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "fiscal_year_start": { "type": "string", "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" }
+      }
+    },
+
+    "brand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["voice", "register", "never_say", "cta_style", "proof_standard"],
+      "properties": {
+        "voice": { "type": "array", "minItems": 2, "maxItems": 5, "items": { "type": "string" } },
+        "register": { "enum": ["first_person_plural", "second_person", "third_person"] },
+        "never_say": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "avoid": { "type": "array", "items": { "type": "string" } },
+        "embrace": { "type": "array", "items": { "type": "string" } },
+        "cta_style": { "type": "string", "minLength": 1 },
+        "proof_standard": { "type": "string", "minLength": 1 },
+        "reading_level_max": { "type": "number", "minimum": 1, "maximum": 20 },
+        "examples_ref": { "type": "string" }
+      }
+    },
+
+    "audiences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "definition"],
+        "properties": {
+          "id": { "$ref": "#/$defs/slug" },
+          "name": { "type": "string" },
+          "definition": { "type": "string", "minLength": 1 },
+          "rule": { "type": "string", "minLength": 1, "description": "Machine-evaluable membership predicate over customer attributes (see docs/marketing-md-spec.md → audience rules). When present, fixtures and preflight evaluate it." },
+          "exclusion_rules": { "type": "array", "items": { "type": "string", "minLength": 1 }, "description": "Predicates; a customer matching any is excluded even if `rule` matches." },
+          "size_hint": { "type": "integer", "minimum": 0 },
+          "fit": { "type": "array", "items": { "$ref": "#/$defs/slug" } },
+          "exclusions": { "type": "array", "items": { "type": "string" } },
+          "frequency_cap_override": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#/$defs/frequency_cap" }
+          }
+        }
+      }
+    },
+
+    "campaign_types": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "default_channels", "primary_metric", "lead_time_days", "default_duration_days", "discount_allowed"],
+        "properties": {
+          "id": { "$ref": "#/$defs/slug" },
+          "default_channels": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/slug" } },
+          "primary_metric": { "$ref": "#/$defs/slug" },
+          "lead_time_days": { "type": "integer", "minimum": 0 },
+          "default_duration_days": { "type": "integer", "minimum": 1 },
+          "discount_allowed": { "type": "boolean" },
+          "max_discount_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+          "tone_override": { "type": "string" },
+          "requires_legal_review": { "type": "boolean" }
+        },
+        "if": { "properties": { "discount_allowed": { "const": true } } },
+        "then": { "required": ["max_discount_pct"] }
+      }
+    },
+
+    "channels": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^[a-z][a-z0-9_]*$" },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["enabled", "required_assets"],
+        "properties": {
+          "enabled": { "type": "boolean" },
+          "required_assets": { "type": "array", "items": { "$ref": "#/$defs/slug" } },
+          "limits": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 1 } },
+          "frequency_cap": { "$ref": "#/$defs/frequency_cap" },
+          "send_window": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["days", "hours", "tz"],
+            "properties": {
+              "days": { "type": "array", "items": { "enum": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] } },
+              "hours": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "integer", "minimum": 0, "maximum": 23 } },
+              "tz": { "type": "string" }
+            }
+          },
+          "suppression": { "type": "array", "items": { "type": "string" } },
+          "rules_pack": { "type": "string" }
+        }
+      }
+    },
+
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["catalog", "attribution_window_days"],
+      "properties": {
+        "catalog": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name", "definition", "direction"],
+            "properties": {
+              "id": { "$ref": "#/$defs/slug" },
+              "name": { "type": "string" },
+              "definition": { "type": "string", "minLength": 1 },
+              "direction": { "enum": ["up", "down"] },
+              "unit": { "type": "string" }
+            }
+          }
+        },
+        "guardrails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["metric", "threshold", "action"],
+            "properties": {
+              "metric": { "$ref": "#/$defs/slug" },
+              "threshold": { "type": "number" },
+              "action": { "enum": ["block", "flag"] }
+            }
+          }
+        },
+        "attribution_window_days": { "type": "integer", "minimum": 1 },
+        "minimum_sample": { "type": "integer", "minimum": 1 }
+      }
+    },
+
+    "claims": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prohibited"],
+      "properties": {
+        "substantiated": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["claim", "evidence"],
+            "properties": {
+              "claim": { "type": "string" },
+              "evidence": { "type": "string" },
+              "expires": { "type": "string", "format": "date" }
+            }
+          }
+        },
+        "prohibited": { "type": "array", "items": { "type": "string" } },
+        "requires_legal": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "compliance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["packs", "consent_basis"],
+      "properties": {
+        "packs": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "consent_basis": { "type": "string", "minLength": 1 },
+        "age_gate": { "type": "integer", "minimum": 0 },
+        "data_handling": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["g1_brief", "g2_assets", "g3_ship"],
+      "properties": {
+        "g1_brief": { "$ref": "#/$defs/gate" },
+        "g2_assets": { "$ref": "#/$defs/gate" },
+        "g3_ship": { "$ref": "#/$defs/gate" },
+        "escalation": { "type": "string" }
+      }
+    },
+
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["retro_required", "retro_due_days", "instinct_promotion_min_support", "instinct_min_confidence"],
+      "properties": {
+        "retro_required": { "type": "boolean" },
+        "retro_due_days": { "type": "integer", "minimum": 1 },
+        "instinct_promotion_min_support": { "type": "integer", "minimum": 1 },
+        "instinct_min_confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+
+    "integrations": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z][a-z0-9_]*$" },
+      "additionalProperties": { "type": "string" }
+    },
+
+    "kill_switch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "owner", "on_trigger"],
+      "properties": {
+        "file": { "type": "string", "minLength": 1 },
+        "owner": { "type": "string", "minLength": 1 },
+        "on_trigger": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+      }
+    }
+  }
+}
